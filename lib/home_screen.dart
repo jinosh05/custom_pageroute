@@ -14,11 +14,14 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(title: const Text('Home Page')),
       body: Center(
         child: Column(
-          children: const [
-            Text(
-              'Welcome to\n Hoem Page',
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            const Text(
+              'Welcome to\n Home Page',
               textAlign: TextAlign.center,
             ),
+            ElevatedButton(onPressed: () {}, child: const Text('Navigate')),
+            const SizedBox()
           ],
         ),
       ),
