@@ -19,6 +19,18 @@ class AppRoute {
 
           // Transition Animation
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            // Future reference , available transitions
+
+            // SlideTransition
+            // ScaleTransition
+            // RotationTransition
+            // SizeTransition
+            // PositionedTransition
+            // RelativePositionedTransition
+            // DecoratedBoxTransition
+            // AlignTransition
+            // DefaultTextStyleTransition
+
             return ScaleTransition(
               scale: animation,
               alignment: Alignment.center,
