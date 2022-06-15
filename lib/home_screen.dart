@@ -1,3 +1,4 @@
+import 'package:custom_pageroute/routes.dart';
 import 'package:custom_pageroute/second_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -23,31 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(
-                    PageRouteBuilder(
-                        // Base Navigation Builder and replacement of
-                        // MaterialPageRoute
-                        pageBuilder: ((context, animation, secondaryAnimation) {
-                          // Return the target Screen
-                          return const SecondScreen();
-                        }),
-
-                        // Duration for Navigation push
-                        transitionDuration: const Duration(seconds: 1),
-
-                        // Duration for Navigation pop
-                        reverseTransitionDuration: const Duration(seconds: 1),
-
-                        // Transition Animation
-                        transitionsBuilder:
-                            (context, animation, secondaryAnimation, child) {
-                          return ScaleTransition(
-                            scale: animation,
-                            alignment: Alignment.center,
-                            child: child,
-                          );
-                        }),
-                  );
+                  AppRoute.push(context, const SecondScreen());
                 },
                 child: const Text('Navigate')),
             const SizedBox()
