@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ElevatedButton(
                 onPressed: () {
-                  AppRoute.push(context, const SecondScreen());
+                  AppRoute.pushScale(context, const SecondScreen());
                 },
                 child: const Text('Navigate')),
             const SizedBox()

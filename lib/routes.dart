@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppRoute {
-  static void push(BuildContext context, Widget page) {
+  static void pushScale(BuildContext context, Widget page) {
     Navigator.of(context).push(
       PageRouteBuilder(
           // Base Navigation Builder and replacement of
